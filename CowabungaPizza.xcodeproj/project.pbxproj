@@ -15,6 +15,9 @@
 		181277CC1DF7B28F00072A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181277CA1DF7B28F00072A67 /* LaunchScreen.storyboard */; };
 		181277D71DF7B28F00072A67 /* CowabungaPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277D61DF7B28F00072A67 /* CowabungaPizzaTests.swift */; };
 		181277E21DF7B28F00072A67 /* CowabungaPizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277E11DF7B28F00072A67 /* CowabungaPizzaUITests.swift */; };
+		181277F11DF7B50700072A67 /* PizzaToppings.json in Resources */ = {isa = PBXBuildFile; fileRef = 181277F01DF7B50700072A67 /* PizzaToppings.json */; };
+		181277F41DF7B6AC00072A67 /* JSONEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277F31DF7B6AC00072A67 /* JSONEngine.swift */; };
+		181277F71DF7B74B00072A67 /* PizzaTopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277F61DF7B74B00072A67 /* PizzaTopping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		181277DD1DF7B28F00072A67 /* CowabungaPizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CowabungaPizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181277E11DF7B28F00072A67 /* CowabungaPizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowabungaPizzaUITests.swift; sourceTree = "<group>"; };
 		181277E31DF7B28F00072A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181277F01DF7B50700072A67 /* PizzaToppings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PizzaToppings.json; sourceTree = "<group>"; };
+		181277F31DF7B6AC00072A67 /* JSONEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEngine.swift; sourceTree = "<group>"; };
+		181277F61DF7B74B00072A67 /* PizzaTopping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaTopping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				181277BD1DF7B28F00072A67 /* CowabungaPizza */,
+				181277EF1DF7B41A00072A67 /* SupportFiles */,
 				181277D51DF7B28F00072A67 /* CowabungaPizzaTests */,
 				181277E01DF7B28F00072A67 /* CowabungaPizzaUITests */,
 				181277BC1DF7B28F00072A67 /* Products */,
@@ -99,6 +106,8 @@
 		181277BD1DF7B28F00072A67 /* CowabungaPizza */ = {
 			isa = PBXGroup;
 			children = (
+				181277F51DF7B6E600072A67 /* Model */,
+				181277F21DF7B5CF00072A67 /* JSONEngine */,
 				181277BE1DF7B28F00072A67 /* AppDelegate.swift */,
 				181277C01DF7B28F00072A67 /* ViewController.swift */,
 				181277C21DF7B28F00072A67 /* Main.storyboard */,
@@ -126,6 +135,31 @@
 				181277E31DF7B28F00072A67 /* Info.plist */,
 			);
 			path = CowabungaPizzaUITests;
+			sourceTree = "<group>";
+		};
+		181277EF1DF7B41A00072A67 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				181277F01DF7B50700072A67 /* PizzaToppings.json */,
+			);
+			name = SupportFiles;
+			path = CowabungaPizza;
+			sourceTree = "<group>";
+		};
+		181277F21DF7B5CF00072A67 /* JSONEngine */ = {
+			isa = PBXGroup;
+			children = (
+				181277F31DF7B6AC00072A67 /* JSONEngine.swift */,
+			);
+			name = JSONEngine;
+			sourceTree = "<group>";
+		};
+		181277F51DF7B6E600072A67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				181277F61DF7B74B00072A67 /* PizzaTopping.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181277F11DF7B50700072A67 /* PizzaToppings.json in Resources */,
 				181277CC1DF7B28F00072A67 /* LaunchScreen.storyboard in Resources */,
 				181277C91DF7B28F00072A67 /* Assets.xcassets in Resources */,
 				181277C41DF7B28F00072A67 /* Main.storyboard in Resources */,
@@ -268,6 +303,8 @@
 				181277C11DF7B28F00072A67 /* ViewController.swift in Sources */,
 				181277BF1DF7B28F00072A67 /* AppDelegate.swift in Sources */,
 				181277C71DF7B28F00072A67 /* CowabungaPizza.xcdatamodeld in Sources */,
+				181277F41DF7B6AC00072A67 /* JSONEngine.swift in Sources */,
+				181277F71DF7B74B00072A67 /* PizzaTopping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
