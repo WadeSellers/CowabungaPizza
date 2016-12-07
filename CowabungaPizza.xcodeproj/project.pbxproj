@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181277BF1DF7B28F00072A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277BE1DF7B28F00072A67 /* AppDelegate.swift */; };
-		181277C11DF7B28F00072A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277C01DF7B28F00072A67 /* ViewController.swift */; };
+		181277C11DF7B28F00072A67 /* ToppingDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181277C01DF7B28F00072A67 /* ToppingDisplayVC.swift */; };
 		181277C41DF7B28F00072A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181277C21DF7B28F00072A67 /* Main.storyboard */; };
 		181277C71DF7B28F00072A67 /* CowabungaPizza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181277C51DF7B28F00072A67 /* CowabungaPizza.xcdatamodeld */; };
 		181277C91DF7B28F00072A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181277C81DF7B28F00072A67 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		181277BB1DF7B28F00072A67 /* CowabungaPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowabungaPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181277BE1DF7B28F00072A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181277C01DF7B28F00072A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		181277C01DF7B28F00072A67 /* ToppingDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingDisplayVC.swift; sourceTree = "<group>"; };
 		181277C31DF7B28F00072A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181277C61DF7B28F00072A67 /* CowabungaPizza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CowabungaPizza.xcdatamodel; sourceTree = "<group>"; };
 		181277C81DF7B28F00072A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 		181277BD1DF7B28F00072A67 /* CowabungaPizza */ = {
 			isa = PBXGroup;
 			children = (
+				181277F81DF85A1900072A67 /* ViewControllers */,
 				181277F51DF7B6E600072A67 /* Model */,
 				181277F21DF7B5CF00072A67 /* JSONEngine */,
 				181277BE1DF7B28F00072A67 /* AppDelegate.swift */,
-				181277C01DF7B28F00072A67 /* ViewController.swift */,
 				181277C21DF7B28F00072A67 /* Main.storyboard */,
 				181277C81DF7B28F00072A67 /* Assets.xcassets */,
 				181277CA1DF7B28F00072A67 /* LaunchScreen.storyboard */,
@@ -160,6 +160,14 @@
 				181277F61DF7B74B00072A67 /* PizzaTopping.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		181277F81DF85A1900072A67 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				181277C01DF7B28F00072A67 /* ToppingDisplayVC.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181277C11DF7B28F00072A67 /* ViewController.swift in Sources */,
+				181277C11DF7B28F00072A67 /* ToppingDisplayVC.swift in Sources */,
 				181277BF1DF7B28F00072A67 /* AppDelegate.swift in Sources */,
 				181277C71DF7B28F00072A67 /* CowabungaPizza.xcdatamodeld in Sources */,
 				181277F41DF7B6AC00072A67 /* JSONEngine.swift in Sources */,
@@ -553,6 +561,7 @@
 				181277E81DF7B28F00072A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181277E91DF7B28F00072A67 /* Build configuration list for PBXNativeTarget "CowabungaPizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +570,7 @@
 				181277EB1DF7B28F00072A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181277EC1DF7B28F00072A67 /* Build configuration list for PBXNativeTarget "CowabungaPizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +579,7 @@
 				181277EE1DF7B28F00072A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
